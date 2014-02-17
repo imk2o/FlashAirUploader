@@ -21,6 +21,7 @@
 		B1E8639218B06ABE003BFF15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E8637418B06ABE003BFF15 /* UIKit.framework */; };
 		B1E8639A18B06ABE003BFF15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1E8639818B06ABE003BFF15 /* InfoPlist.strings */; };
 		B1E8639C18B06ABE003BFF15 /* FlashAirUploaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E8639B18B06ABE003BFF15 /* FlashAirUploaderTests.m */; };
+		B1E863A718B23A22003BFF15 /* UIImage+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E863A618B23A22003BFF15 /* UIImage+Sizing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B1E8639718B06ABE003BFF15 /* FlashAirUploaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashAirUploaderTests-Info.plist"; sourceTree = "<group>"; };
 		B1E8639918B06ABE003BFF15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1E8639B18B06ABE003BFF15 /* FlashAirUploaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashAirUploaderTests.m; sourceTree = "<group>"; };
+		B1E863A518B23A22003BFF15 /* UIImage+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sizing.h"; sourceTree = "<group>"; };
+		B1E863A618B23A22003BFF15 /* UIImage+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sizing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				B1E8638618B06ABE003BFF15 /* FAUViewController.m */,
 				B1E8638818B06ABE003BFF15 /* Images.xcassets */,
 				B1E8637718B06ABE003BFF15 /* Supporting Files */,
+				B1E863A518B23A22003BFF15 /* UIImage+Sizing.h */,
+				B1E863A618B23A22003BFF15 /* UIImage+Sizing.m */,
 			);
 			path = FlashAirUploader;
 			sourceTree = "<group>";
@@ -200,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = imk2o;
 				TargetAttributes = {
+					B1E8636C18B06ABE003BFF15 = {
+						DevelopmentTeam = 427QQ329ZX;
+					};
 					B1E8638D18B06ABE003BFF15 = {
 						TestTargetID = B1E8636C18B06ABE003BFF15;
 					};
@@ -253,6 +261,7 @@
 				B1E8638718B06ABE003BFF15 /* FAUViewController.m in Sources */,
 				B1E8637D18B06ABE003BFF15 /* main.m in Sources */,
 				B1E8638118B06ABE003BFF15 /* FAUAppDelegate.m in Sources */,
+				B1E863A718B23A22003BFF15 /* UIImage+Sizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +388,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlashAirUploader/FlashAirUploader-Prefix.pch";
 				INFOPLIST_FILE = "FlashAirUploader/FlashAirUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +405,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlashAirUploader/FlashAirUploader-Prefix.pch";
 				INFOPLIST_FILE = "FlashAirUploader/FlashAirUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
